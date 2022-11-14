@@ -13,3 +13,11 @@ variable "start_z" {
 variable "height" {
   default = 20
 }
+
+variable "api_key" {
+  type = string
+}
+
+variable "endpoint" {
+  type = string
+}

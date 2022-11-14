@@ -14,10 +14,3 @@ variable "height" {
   type = integer
 }
 
-variable "api_key" {
-  type = string
-}
-
-variable "endpoint" {
-  type = string
-}
