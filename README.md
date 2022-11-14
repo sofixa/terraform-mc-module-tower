@@ -1,1 +1,1 @@
-# terraform-provider-minecraft
+# terraform-provider-minecraf (mc)t
