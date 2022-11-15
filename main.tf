@@ -1,8 +1,8 @@
 terraform {
   required_providers {
     mc = {
-      source  = "nicholasjackson/mc"
-      version = "0.1.4"
+      source  = "app.terraform.io/atodorov-hashi/mc"
+      version = "0.1.0"
     }
   }
 }
@@ -18,7 +18,7 @@ resource "mc_block" "block1" {
   x = var.start_x
   y = var.start_y + count.index
   z = var.start_z
-  material = "smooth_quartz"
+  material = var.material
 }
 
 resource "mc_block" "block2" {
@@ -27,7 +27,7 @@ resource "mc_block" "block2" {
   x = var.start_x + 1
   y = var.start_y + count.index
   z = var.start_z
-  material = "smooth_quartz"
+  material = var.material
 }
 
 resource "mc_block" "block3" {
@@ -36,7 +36,7 @@ resource "mc_block" "block3" {
   x = var.start_x
   y = var.start_y + count.index
   z = var.start_z + 1
-  material = "smooth_quartz"
+  material = var.material
 }
 
 resource "mc_block" "block4" {
@@ -44,5 +44,5 @@ resource "mc_block" "block4" {
   x = var.start_x + 1
   y = var.start_y + count.index
   z = var.start_z + 1
-  material = "smooth_quartz"
+  material = var.material
 }
