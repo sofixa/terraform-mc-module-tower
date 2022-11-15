@@ -1,17 +1,17 @@
 variable "start_x" {
-  default = -1278
+#  default = -1278
 }
 
 variable "start_y" {
-  default = 24
+#  default = 24
 }
 
 variable "start_z" {
-  default = 140
+#  default = 140
 }
 
 variable "height" {
-  default = 20
+  type = number
 }
 
 variable "api_key" {
@@ -20,4 +20,9 @@ variable "api_key" {
 
 variable "endpoint" {
   type = string
+}
+
+variable "material" {
+  type = string
+  default = "smooth_quartz"
 }
