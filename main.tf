@@ -2,7 +2,7 @@ terraform {
   required_providers {
     mc = {
       source  = "app.terraform.io/atodorov-hashi/mc"
-      version = "0.1.0"
+      version = "~> 0.1"
     }
   }
 }
