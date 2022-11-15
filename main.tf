@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     minecraft = {
-      source  = "app.terraform.io/atodorov-hashi/mc"
+      source  = "app.terraform.io/paris-terraform-day/minecraft"
       version = "~> 0.1"
     }
   }
