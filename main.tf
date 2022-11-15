@@ -1,18 +1,18 @@
 terraform {
   required_providers {
-    mc = {
+    minecraft = {
       source  = "app.terraform.io/atodorov-hashi/mc"
       version = "~> 0.1"
     }
   }
 }
 
-provider "mc" {
+provider "minecraft" {
   endpoint = var.endpoint
   api_key = var.api_key
 }
 
-resource "mc_block" "block1" {
+resource "minecraft_block" "block1" {
   count = var.height
 
   x = var.start_x
@@ -21,7 +21,7 @@ resource "mc_block" "block1" {
   material = var.material
 }
 
-resource "mc_block" "block2" {
+resource "minecraft_block" "block2" {
   count = var.height
 
   x = var.start_x + 1
@@ -30,7 +30,7 @@ resource "mc_block" "block2" {
   material = var.material
 }
 
-resource "mc_block" "block3" {
+resource "minecraft_block" "block3" {
   count = var.height
 
   x = var.start_x
@@ -39,7 +39,7 @@ resource "mc_block" "block3" {
   material = var.material
 }
 
-resource "mc_block" "block4" {
+resource "minecraft_block" "block4" {
   count = var.height
   x = var.start_x + 1
   y = var.start_y + count.index
